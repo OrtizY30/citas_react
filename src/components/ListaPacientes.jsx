@@ -15,7 +15,7 @@ const ListaPacientes = ({ pacientes, setPaciente, eliminarPaciente }) => {
           <p className='mt-5 text-center text-xl mb-10'>
             Administra tus <span className='text-indigo-600 font-bold  '> Pacientes y Citas</span>
           </p>
-          <div className='md:h-screen overflow-y-hidden w-full'>
+          <div className='md:h-screen w-full'>
 
             {pacientes.map(paciente => (
               <Paciente
