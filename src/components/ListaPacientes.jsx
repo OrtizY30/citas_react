@@ -6,7 +6,7 @@ const ListaPacientes = ({ pacientes, setPaciente, eliminarPaciente }) => {
 
   return (
 
-    <div className='md:w-1/2 lg:w-3/5 mb-10 md:h-screen overflow-y-auto '>
+    <div className='md:w-1/2 lg:w-3/5 mb-10 md:h-screen   '>
 
       { pacientes && pacientes.length ? (
         <>
@@ -15,7 +15,7 @@ const ListaPacientes = ({ pacientes, setPaciente, eliminarPaciente }) => {
           <p className='mt-5 text-center text-xl mb-10'>
             Administra tus <span className='text-indigo-600 font-bold  '> Pacientes y Citas</span>
           </p>
-          <div className='md:h-screen w-full'>
+          <div className='md:h-screen w-full overflow-y-auto '>
 
             {pacientes.map(paciente => (
               <Paciente
